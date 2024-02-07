@@ -1,0 +1,140 @@
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: 'Poppins', sans-serif;
+}
+body{
+     height: 100vh;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     background-color: #f4f4f4;
+}
+/* ==================================
+Profile card
+================================== */
+.profile-card{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     max-width: 370px;
+     width: 100%;
+     border-radius: 24px;
+     padding: 25px;
+     background-color: #ffffff;
+     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+     position: relative;
+}
+.profile-card::before{
+     content: '';
+     position: absolute;
+     height: 36%;
+     width: 100%;
+     background-color: #4070f4;
+     top: 0;
+     left: 0;
+     border-radius: 24px 24px 0 0;
+}
+/* ==================================
+Profile image
+================================== */
+.image{
+     position: relative; /* z-index: 99; */
+     height: 150px;
+     width: 150px;
+     border-radius: 50%;
+     background-color: #4070f4;
+     padding: 3px;
+     margin-bottom: 10px;
+}
+.image .profile-img{
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+     border-radius: 50%;
+     border: 3px solid #ffffff;
+}
+/* ==================================
+Profile name
+================================== */
+.profile-card .text-data{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     color: #333;
+}
+.profile-card .text-data .name{
+     font-size: 22px;
+     font-weight: 500;
+}
+.profile-card .text-data .job{
+     font-size: 15px;
+     font-weight: 400;
+}
+/* ==================================
+Profile Links
+================================== */
+.profile-card .media-buttons{
+     display: flex;
+     align-items: center;
+     margin-top: 15px;
+}
+.profile-card .media-buttons .link{
+     text-decoration: none;
+     height: 34px;
+     width: 34px;
+     border-radius: 50%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     color: #ffffff;
+     font-size: 18px;
+     background-color: #4070f4;
+     margin: 0 8px;
+}
+/* ==================================
+Profile Buttons
+================================== */
+.profile-card .buttons{
+     display: flex;
+     align-items: center;
+     margin-top: 25px;
+}
+.profile-card .buttons .button{
+     background-color: #4070f4;
+     padding: 8px 24px;
+     cursor: pointer;
+     margin: 0 10px;
+     border-radius: 24px;
+     border: none;
+     color: #ffffff;
+     font-size: 14px;
+     font-weight: 400;
+     transition: all 0.3s ease;
+}
+.profile-card .buttons .button:hover{
+     background-color: #0e4bf1;
+}
+/* ==================================
+Profile analytics
+================================== */
+.profile-card .analytics{
+     display: flex;
+     align-items: center;
+     margin-top: 25px;
+}
+.profile-card .analytics .data{
+     display: flex;
+     align-items: center;
+     color: #333;
+     padding: 0 20px;
+     border-right: 2px solid #e7e7e7;
+}
+.profile-card .analytics .data i{
+     font-size: 18px;
+     margin-right: 6px;
+}
+.profile-card .analytics .data:last-child{
+     border-right: none;
+}
